@@ -559,18 +559,19 @@ canvas {
 /* Global Styles */
 /* Main Styles */
 aside.left-panel {
-  background: #fff;
-  height: 100vh;
-  padding: 0;
-  vertical-align: top;
-  width: 280px;
-  -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
-          box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  top: 55px;
-  z-index: 999; }
+    background: #f36f2e;
+    height: 100vh;
+    padding: 0;
+    vertical-align: top;
+    width: 280px;
+    -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    z-index: 999;
+}
   aside.left-panel:hover {
     overflow-x: scroll; }
 
@@ -581,13 +582,14 @@ aside.left-panel {
   margin-left: 83px; }
 
 .navbar {
-  background: #fff;
-  border-radius: 0;
-  border: none;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  vertical-align: top; }
+    background: #f36703;
+    border-radius: 0;
+    border: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
   .navbar .main-menu {
     float: left;
     padding: 0;
@@ -885,7 +887,7 @@ aside.left-panel {
 .right-panel .navbar-brand {
   line-height: 42px; }
   .right-panel .navbar-brand img {
-    max-width: 145px; }
+    max-width: 140px; }
   .right-panel .navbar-brand.hidden {
     display: none; }
 

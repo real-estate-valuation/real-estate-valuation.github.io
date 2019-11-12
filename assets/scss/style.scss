@@ -273,21 +273,22 @@ canvas {
 /* Global Styles */
 
 /* Main Styles */
- 
+
 aside.left-panel {
-    background: $menu-bg; 
+    background: #f36703;
     height: 100vh;
     // min-height: 100%;
     padding: 0;
     vertical-align: top;
     width: 280px;
     // transition: all 0.25s ease;
-    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08); 
+    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
     position: fixed;
     left: 0;
     bottom: 0;
     top: 55px;
     z-index: 999;
+
     &:hover {
         overflow-x: scroll;
     }
@@ -301,22 +302,24 @@ aside.left-panel {
         margin-left: 83px;
     }
 }
-  
-  
+
+
 
 .navbar {
-    background: $menu-bg;
+    background: #f36703;
     border-radius: 0;
     border: none;
     display: inline-block;
     margin: 0;
     padding: 0;
-    vertical-align: top; 
+    vertical-align: top;
+
     .main-menu {
         float: left;
         padding: 0;
-         padding-bottom: 50px;
+        padding-bottom: 50px;
     }
+
     .menu-title {
         color: #41434d;
         clear: both;
@@ -329,89 +332,106 @@ aside.left-panel {
         text-transform: uppercase;
         width: 100%;
     }
+
     .navbar-nav {
         float: none;
         position: relative;
-        >li { 
+
+        > li {
             padding-left: 30px;
-            padding-right:30px;
+            padding-right: 30px;
+
             &.active {
-                background: $menu-active-bg;
+                background: #ffa67a;
             }
         }
+
         li {
             width: 100%;
+
             &.active .menu-icon,
             &:hover .toggle_nav_button:before,
             .toggle_nav_button.nav-open:before {
-                color: $menu-active;
+                color: #6c757d;
             }
+
             .dropdown-toggle:after {
                 display: none;
             }
-            >a {
+
+            > a {
                 background: none !important;
-                color: $menu-color;
-                display: inline-block; 
+                color: ##6c757d;
+                display: inline-block;
                 font-size: 14px;
                 line-height: 26px;
                 padding: 10px 0;
                 position: relative;
                 width: 100%;
+
                 &:hover,
                 &:hover .menu-icon {
-                    color: $menu-active ;
+                    color: #6c757d;
                 }
+
                 .menu-icon {
-                    color: $menu-color;
+                    color: #fff;
                     float: left;
                     margin-top: 8px;
                     width: 55px;
                     text-align: left;
                     z-index: 9;
                 }
+
                 .menu-title-text {
                     font-size: 14px;
                 }
+
                 .badge {
-                    border-radius: 0; 
+                    border-radius: 0;
                     font-weight: 600;
                     float: right;
                     margin: 6px 0 0 0;
                     padding: 0.4em 0.5em;
                 }
             }
+
             &.menu-item-has-children {
                 position: relative;
+
                 a {
                     line-height: 30px;
+
                     &:before {
-                        content: ""; 
+                        content: "";
                         position: absolute;
                         top: 23px;
                         right: 0;
                         width: 8px;
-                        height: 8px;  
+                        height: 8px;
                         border-style: solid;
                         border-width: 1px;
                         border-color: $menu-color $menu-color transparent transparent;
-                        transform:rotate(45deg);
-  
+                        transform: rotate(45deg);
                         transition: all .25s ease;
                     }
-                    &:hover:before { 
+
+                    &:hover:before {
                         border-color: $menu-active $menu-active transparent transparent;
                     }
                 }
+
                 .sub-menu {
-                    background: $menu-bg;
+                    background: #f36703;
                     border: none;
                     box-shadow: none;
                     overflow-y: hidden;
                     padding: 0 0 0 35px;
+
                     li {
                         position: relative;
                     }
+
                     i {
                         color: #c8c9ce;
                         float: left;
@@ -421,12 +441,15 @@ aside.left-panel {
                         font-size: 14px;
                         top: 9px;
                     }
+
                     a {
                         padding: 2px 0 2px 30px;
+
                         &:before {
                             content: '';
                             display: none;
                         }
+
                         .menu-icon {
                             top: 13px;
                             text-align: left;
@@ -434,16 +457,19 @@ aside.left-panel {
                         }
                     }
                 }
+
                 &.show {
                     a:before {
                         //transform:rotate(135deg);
-                        border-color: transparent $menu-color $menu-color  transparent;
+                        border-color: transparent $menu-color $menu-color transparent;
                         top: 20px;
                         right: -5px;
                     }
-                    a:hover:before { 
-                        border-color: transparent $menu-active $menu-active  transparent;
+
+                    a:hover:before {
+                        border-color: transparent $menu-active $menu-active transparent;
                     }
+
                     .sub-menu {
                         max-height: 1000px;
                         opacity: 1;
@@ -454,10 +480,10 @@ aside.left-panel {
         }
     }
 }
-.navbar .navbar-nav>.active>a,
-.navbar .navbar-nav>.active>a:focus,
-.navbar .navbar-nav>.active>a:hover {
-    color: $menu-active;
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:focus,
+.navbar .navbar-nav > .active > a:hover {
+    color: #6c757d;
 }
 .navbar-nav li span.count {
     background: #a9d86e;
@@ -466,6 +492,7 @@ aside.left-panel {
     font-family: 'Open Sans';
     font-size: 9px;
     font-weight: 700;
+    float: right;
     float: right;
     height: 20px;
     width: 20px;
