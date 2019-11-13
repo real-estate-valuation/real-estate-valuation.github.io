@@ -439,7 +439,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="col-6 row">
+                                        <div class="col-lg-6 row">
                                             <button id="myBtn" class="btn btn-outline-warning">Valuate</button>
 
                                             <!-- The Modal -->
@@ -449,7 +449,6 @@
                                                 <div class="modal-content">
                                                     <!--<span class="close">&times;</span>-->
                                                     <div class="modal-header">
-                                                        <span class="close">&times;</span>
                                                         <h3>Estimated Result</h3>
                                                     </div>
                                                     <hr />
@@ -519,7 +518,7 @@
                                                                     </table>
                                                                 </div>
                                                                 <div class="card-footer">
-                                                                    Click here to see other   <a href="user-neighbor-table.html"> <div style="color:orange">Neighbors</div> </a>
+                                                                    Click here to see other   <a href="ad-tables-basic.html"> <div style="color:orange">Neighbors</div> </a>
                                                                 </div>
                                                             </div>
 
@@ -528,13 +527,67 @@
 
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <h4> Estimated Price: <strong>12,500,897,210 VNĐ - 13,100,0000,000 VNĐ</strong> </h4>
+                                                        <div class="col-lg-8 row">
+                                                            <h4> Estimated Price: <strong>12,500,897,210 VNĐ - 13,100,0000,000 VNĐ</strong> </h4>
+                                                        </div>
+
+                                                        <div class="col-lg-2 row">
+                                                            <button id="myBtn1" class="btn btn-outline-warning">Submit Price</button>
+
+                                                            <!-- The Modal -->
+                                                            <div id="myModal1" class="modal">
+
+                                                                <!-- Modal content -->
+                                                                <div class="modal-content">
+                                                                    <!--<span class="close">&times;</span>-->
+                                                                    <div class="modal-header">
+                                                                        <span class="close">&times;</span>
+                                                                        <h3>Final Result</h3>
+                                                                    </div>
+                                                                    <hr />
+                                                                    <div class="modal-body">
+                                                                        <div class="col-12 row">
+                                                                            <div class="col-lg-10 row" style="margin:6px">
+                                                                                <div class="col-lg-4 ">
+                                                                                    <label>Amount in Number</label>
+                                                                                </div>
+                                                                                <div class="col-lg-8">
+                                                                                    <div class="input-group">
+                                                                                        <input id="x_card_code" name="x_card_code" type="tel" class="form-control cc-cvc" value="" data-val="true" data-val-required="Please enter" data-val-cc-cvc="Please enter a valid security code" placeholder="000,000,000,000 VND">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-10 row" style="margin:6px">
+                                                                                <div class="col-lg-4 ">
+                                                                                    <label>Amount in Words</label>
+                                                                                </div>
+                                                                                <div class="col-lg-8">
+                                                                                    <div class="input-group">
+                                                                                        <input id="x_card_code" name="x_card_code" type="tel" class="form-control cc-cvc" value="" data-val="true" data-val-required="Please enter" data-val-cc-cvc="Please enter a valid security code" placeholder="X - Viet Nam Dong">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button id="payment-button" type="submit" class="btn btn-outline-warning" onclick="msg()" formaction="ad-tables-data.html">Submit</button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2 row">
+
+                                                            <button class="btn btn-outline-warning" data-dismiss="modal" onclick="closeModal()">Save</button>
+                                                        </div>
+
                                                     </div>
                                                 </div>
 
                                             </div>
-                                        </div>
 
+
+                                        </div>
 
                                     </div>
                                 </div>
@@ -547,9 +600,7 @@
             </div><!-- .animated -->
         </div><!-- .content -->
         <div class="clearfix"></div>
-        <footer class="site-footer">
-             
-        </footer>
+        <footer class="site-footer"></footer>
     </div><!-- /#right-panel -->
     <!-- Right Panel -->
     <!-- Scripts -->
@@ -560,20 +611,22 @@
     <script src="assets/js/main.js"></script>
 
     <script>
+
         // Get the modal
         var modal = document.getElementById("myModal");
-
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
 
+
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-
         // When the user clicks the button, open the modal
         btn.onclick = function () {
             modal.style.display = "block";
         }
-
+        function closeModal() {
+            modal.style.display = "none";
+        }
         // When the user clicks on <span> (x), close the modal
         span.onclick = function () {
             modal.style.display = "none";
@@ -584,6 +637,43 @@
             if (event.target == modal) {
                 modal.style.display = "none";
             }
+        }
+
+    </script>
+
+    <script>
+        // Get the modal
+
+
+        var modal1 = document.getElementById("myModal1");
+        // Get the button that opens the modal
+        var btn1 = document.getElementById("myBtn1");
+
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn1.onclick = function () {
+            modal1.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function () {
+            modal1.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event1) {
+            if (event1.target == modal1) {
+                modal1.style.display = "none";
+            }
+        }
+    </script>
+   
+    <script>
+        function msg() {
+
+            window.location.href = "user-table-history.html"
         }
     </script>
 </body>
