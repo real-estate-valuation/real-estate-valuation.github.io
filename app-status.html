@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>WHatever Team - Real Estate Valuation</title>
+    <title>Whatever Team - Real Estate Valuation</title>
     <meta name="description" content="WHatever Team - Real Estate Valuation">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -76,12 +76,11 @@
 </head>
 
 <body>
-    <!-- Left Panel -->
     <aside id="left-panel" class="left-panel">
         <nav class="navbar navbar-expand-sm navbar-default">
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active">
+                    <li>
                         <a href="ad-index.html"><i class="menu-icon fa fa-laptop"></i>DISCOVERY </a>
                     </li>
                     <li class="menu-title">PERSONAL INFORMATION</li><!-- /.menu-title -->
@@ -97,14 +96,14 @@
 
                     <li class="menu-title">VALUATION SECTION</li><!-- /.menu-title -->
                     <!--Form-->
-                    <li>
+                    <li >
                         <a href="ad-forms-property.html"> <i class="menu-icon fa fa-tasks"></i>Property Information</a>
                     </li>
                     <!--Market Value-->
-                    <li>
+                    <li >
                         <a href="ad-widgets.html"> <i class="menu-icon ti-email"></i>Market Value </a>
                     </li>
-                   
+
 
                     <li class="menu-title">MANAGEMENT SECTION</li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
@@ -115,7 +114,7 @@
                             <li><i class="menu-icon fa fa-paper-plane"></i><a href="forms-roleuser.html">Assign Role</a></li>
                         </ul>
                     </li>
-                    <li class="menu-item-has-children dropdown">
+                    <li class="menu-item-has-children dropdown active"  >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Jobs Management</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-sign-in"></i><a href="ad-forms-basic.html">Import Data</a></li>
@@ -195,7 +194,7 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur</p>
                                     </div>
                                 </a>
-                               
+
                                 <a class="dropdown-item media" href="#">
                                     <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
                                     <div class="message media-body">
@@ -312,57 +311,133 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="box-title">Company Goals </h4>
+                                <h4 class="box-title">Application Performance </h4>
                             </div>
                             <div class="row">
-                                <div class="col-lg-8">
+                                <div class="col-lg-12">
                                     <div class="card-body">
-                                        <!-- <canvas id="TrafficChart"></canvas>   -->
-                                        <div id="traffic-chart" class="traffic-chart"></div>
+                                        <div class="flot-container">
+                                            <div id="cpu-load" class="cpu-load"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="card-body">
-                                        <div class="progress-box progress-1">
-                                            <h4 class="por-title">Total Valuated Cases</h4>
-                                            <div class="por-txt">96,930 Cases (40%)</div>
-                                            <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-1" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-box progress-2">
-                                            <h4 class="por-title"> Total Trustworthy Sources</h4>
-                                            <div class="por-txt">3,220 Records (24%)</div>
-                                            <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-2" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-box progress-2">
-                                            <h4 class="por-title">Total Processing Cases</h4>
-                                            <div class="por-txt">29,658 Case (60%)</div>
-                                            <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-3" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress-box progress-2">
-                                            <h4 class="por-title">Total Expected Case</h4>
-                                            <div class="por-txt">99,658 Users (90%)</div>
-                                            <div class="progress mb-2" style="height: 5px;">
-                                                <div class="progress-bar bg-flat-color-4" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div> <!-- /.card-body -->
-                                </div>
+                             
                             </div> <!-- /.row -->
                             <div class="card-body"></div>
                         </div>
                     </div><!-- /# column -->
                 </div>
-               
                 <!--  /Traffic -->
                 <div class="clearfix"></div>
                 <!-- Orders -->
-              
+                <div class="orders">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="box-title">User Accounts </h4>
+                                </div>
+                                <div class="card-body--">
+                                    <div class="table-stats order-table ov-h">
+                                        <table class="table ">
+                                            <thead>
+                                                <tr>
+                                                    <th class="serial">#</th>
+                                                    <th class="avatar">Avatar</th>
+                                                    <th>Account</th>
+                                                    <th>Name</th>
+                                                    <th>Company</th>
+                                                    <th>Department</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="serial">1.</td>
+                                                    <td class="avatar">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle" src="images/avatar/1.jpg" alt=""></a>
+                                                        </div>
+                                                    </td>
+                                                    <td> @maleficient2 </td>
+                                                    <td>  <span class="name">Maleficient Angelina</span> </td>
+                                                    <td> <span class="product">Disney Bank</span> </td>
+                                                    <td><span class="product">Evil Operation</span></td>
+                                                    <td>
+                                                        <span class="badge badge-complete">Active</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">2.</td>
+                                                    <td class="avatar">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle" src="images/avatar/2.jpg" alt=""></a>
+                                                        </div>
+                                                    </td>
+                                                    <td> @ralphloveinternet </td>
+                                                    <td>  <span class="name">Ralph Love Internet</span> </td>
+                                                    <td> <span class="product">Disney Bank</span> </td>
+                                                    <td><span class="product"> Broken Valuation </span></td>
+                                                    <td>
+                                                        <span class="badge badge-complete">Active</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">3.</td>
+                                                    <td class="avatar">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle" src="images/avatar/3.jpg" alt=""></a>
+                                                        </div>
+                                                    </td>
+                                                    <td> @blackwidows </td>
+                                                    <td>  <span class="name">Scarlett Jonhansson</span> </td>
+                                                    <td> <span class="product">Marvel Appraisal Company</span> </td>
+                                                    <td><span class="product">Taxation </span></td>
+                                                    <td>
+                                                        <span class="badge badge-pending">Inactive</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="serial">4.</td>
+                                                    <td class="avatar">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle" src="images/avatar/4.jpg" alt=""></a>
+                                                        </div>
+                                                    </td>
+                                                    <td> @philcoulson </td>
+                                                    <td>  <span class="name">Phil Coulson</span> </td>
+                                                    <td> <span class="product">Shield Company</span> </td>
+                                                    <td><span class="product">Risk Assurance </span></td>
+                                                    <td>
+                                                        <span class="badge badge-pending">Inactive</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class=" pb-0">
+                                                    <td class="serial">5.</td>
+                                                    <td class="avatar pb-0">
+                                                        <div class="round-img">
+                                                            <a href="#"><img class="rounded-circle" src="images/avatar/6.jpg" alt=""></a>
+                                                        </div>
+                                                    </td>
+                                                    <td> @edenhazard </td>
+                                                    <td>  <span class="name">Eden Hazard</span> </td>
+                                                    <td> <span class="product">Real Madrid Appraisal</span> </td>
+                                                    <td><span class="product">Attack Assurance </span></td>
+                                                    <td>
+                                                        <span class="badge badge-complete">Active</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- /.table-stats -->
+                                </div>
+                            </div> <!-- /.card -->
+                        </div>  <!-- /.col-lg-8 -->
+
+                       
+                    </div>
+                </div>
+               
             </div>
             <!-- .animated -->
         </div>
@@ -370,7 +445,7 @@
         <div class="clearfix"></div>
         <!-- Footer -->
         <footer class="site-footer">
-            
+           
         </footer>
         <!-- /.site-footer -->
     </div>
@@ -402,97 +477,114 @@
 
     <!--Local Stuff-->
     <script>
-        jQuery(document).ready(function($) {
-            "use strict";
+        (function ($) {
 
-           
-             
-            // Traffic Chart using chartist
-            if ($('#traffic-chart').length) {
-                var chart = new Chartist.Line('#traffic-chart', {
-                  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-                  series: [
-                  [0, 18000, 35000,  25000,  22000,  0],
-                  [0, 33000, 15000,  20000,  15000,  300],
-                  [0, 15000, 28000,  15000,  30000,  5000]
-                  ]
-              }, {
-                  low: 0,
-                  showArea: true,
-                  showLine: false,
-                  showPoint: false,
-                  fullWidth: true,
-                  axisX: {
-                    showGrid: true
-                }
+            "use strict"; // Start of use strict
+
+            var SufeeAdmin = {
+
+                cpuLoad: function () {
+
+                    var data = [],
+                        totalPoints = 300;
+
+                    function getRandomData() {
+
+                        if (data.length > 0)
+                            data = data.slice(1);
+
+                        // Do a random walk
+
+                        while (data.length < totalPoints) {
+
+                            var prev = data.length > 0 ? data[data.length - 1] : 50,
+                                y = prev + Math.random() * 10 - 5;
+
+                            if (y < 0) {
+                                y = 0;
+                            } else if (y > 100) {
+                                y = 100;
+                            }
+
+                            data.push(y);
+                        }
+
+                        // Zip the generated y values with the x values
+
+                        var res = [];
+                        for (var i = 0; i < data.length; ++i) {
+                            res.push([i, data[i]])
+                        }
+
+                        return res;
+                    }
+
+                    // Set up the control widget
+
+                    var updateInterval = 30;
+                    $("#updateInterval").val(updateInterval).change(function () {
+                        var v = $(this).val();
+                        if (v && !isNaN(+v)) {
+                            updateInterval = +v;
+                            if (updateInterval < 1) {
+                                updateInterval = 1;
+                            } else if (updateInterval > 3000) {
+                                updateInterval = 3000;
+                            }
+                            $(this).val("" + updateInterval);
+                        }
+                    });
+
+                    var plot = $.plot("#cpu-load", [getRandomData()], {
+                        series: {
+                            shadowSize: 0 // Drawing is faster without shadows
+                        },
+                        yaxis: {
+                            min: 0,
+                            max: 100
+                        },
+                        xaxis: {
+                            show: false
+                        },
+                        colors: ["#00c292"],
+                        grid: {
+                            color: "transparent",
+                            hoverable: true,
+                            borderWidth: 0,
+                            backgroundColor: 'transparent'
+                        },
+                        tooltip: true,
+                        tooltipOpts: {
+                            content: "Y: %y",
+                            defaultTheme: false
+                        }
+
+
+                    });
+
+                    function update() {
+
+                        plot.setData([getRandomData()]);
+
+                        // Since the axes don't change, we don't need to call plot.setupGrid()
+
+                        plot.draw();
+                        setTimeout(update, updateInterval);
+                    }
+
+                    update();
+
+                },
+
+
+            };
+
+            $(document).ready(function () {
+                SufeeAdmin.cpuLoad();
+
             });
 
-                chart.on('draw', function(data) {
-                    if(data.type === 'line' || data.type === 'area') {
-                        data.element.animate({
-                            d: {
-                                begin: 2000 * data.index,
-                                dur: 2000,
-                                from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
-                                to: data.path.clone().stringify(),
-                                easing: Chartist.Svg.Easing.easeOutQuint
-                            }
-                        });
-                    }
-                });
-            }
-            // Traffic Chart using chartist End
-            //Traffic chart chart-js
-            if ($('#TrafficChart').length) {
-                var ctx = document.getElementById( "TrafficChart" );
-                ctx.height = 150;
-                var myChart = new Chart( ctx, {
-                    type: 'line',
-                    data: {
-                        labels: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul" ],
-                        datasets: [
-                        {
-                            label: "Visit",
-                            borderColor: "rgba(4, 73, 203,.09)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(4, 73, 203,.5)",
-                            data: [ 0, 2900, 5000, 3300, 6000, 3250, 0 ]
-                        },
-                        {
-                            label: "Bounce",
-                            borderColor: "rgba(245, 23, 66, 0.9)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(245, 23, 66,.5)",
-                            pointHighlightStroke: "rgba(245, 23, 66,.5)",
-                            data: [ 0, 4200, 4500, 1600, 4200, 1500, 4000 ]
-                        },
-                        {
-                            label: "Targeted",
-                            borderColor: "rgba(40, 169, 46, 0.9)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(40, 169, 46, .5)",
-                            pointHighlightStroke: "rgba(40, 169, 46,.5)",
-                            data: [1000, 5200, 3600, 2600, 4200, 5300, 0 ]
-                        }
-                        ]
-                    },
-                    options: {
-                        responsive: true,
-                        tooltips: {
-                            mode: 'index',
-                            intersect: false
-                        },
-                        hover: {
-                            mode: 'nearest',
-                            intersect: true
-                        }
-
-                    }
-                } );
-            }
-            //Traffic chart chart-js  End
-            
-        });
+        })(jQuery);
     </script>
 </body>
 </html>
